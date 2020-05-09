@@ -1,8 +1,13 @@
 {
   "pages": [
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
+    "pages/index/index",
+    {
+      "path": "pages/logs/index",
+      "config": {
+        "navigationBarTitleText": "查看启动日志"
+      }
+    },
+    "pages/counter/index"
   ],
   "usingComponents": {
     "van-tag": "/vant-weapp/dist/tag/index"
@@ -21,24 +26,24 @@
 
     "list": [{
       "text": "首页",
-      "pagePath": "pages/index/main",
+      "pagePath": "pages/index/index",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
       "text": "订单",
-      "pagePath": "pages/logs/main",
+      "pagePath": "pages/logs/index",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }],
 
     "items": [{
       "name": "首页",
-      "pagePath": "pages/index/main",
+      "pagePath": "pages/index/index",
       "icon": "static/tabs/home.png",
       "activeIcon": "static/tabs/home-active.png"
     }, {
       "name": "订单",
-      "pagePath": "pages/logs/main",
+      "pagePath": "pages/logs/index",
       "icon": "static/tabs/orders.png",
       "activeIcon": "static/tabs/orders-active.png"
     }],
