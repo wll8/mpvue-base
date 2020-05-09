@@ -16,5 +16,5 @@ npm i && npm run dev # 安装依赖并启动项目
 - [ ] [简化分包配置](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/basic.html)
 - [x] [less](https://less.bootcss.com/) 预处理器
 - [x] [sass-resources-loader](https://github.com/shakacode/sass-resources-loader) 配置全局 less 公用文件
-- [ ] [flyio](https://www.npmjs.com/package/flyio) 作为请求库, 并统一配置 api
+- [x] [flyio](https://www.npmjs.com/package/flyio) 作为请求库, 并统一配置 api
 

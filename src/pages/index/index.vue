@@ -9,6 +9,10 @@
       <van-tag type="success">vant-weapp 标签组件</van-tag>
     </div>
 
+    <div class="demo">
+      <div @click="httpFn">发送请求</div>
+    </div>
+
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
@@ -60,6 +64,21 @@ export default {
   },
 
   methods: {
+    httpFn () {
+      this.$http.getTest({page: 2, pageSize: 15}).then(res => {
+        wx.showToast({
+          title: `成功 ${JSON.stringify(res.args, null, 2)}`,
+          icon: 'none'
+        })
+        console.log(`res`, res)
+      }).catch(err => {
+        wx.showToast({
+          title: `失败 ${JSON.stringify(err, null, 2)}`,
+          icon: 'none'
+        })
+        console.log(`err`, err)
+      })
+    },
     bindViewTap () {
       const url = '../logs/main'
       if (mpvuePlatform === 'wx') {
