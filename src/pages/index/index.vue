@@ -13,6 +13,10 @@
       <div @click="httpFn">发送请求</div>
     </div>
 
+    <div class="demo">
+      <div @click="routerFn"> $router.push 切换路由</div>
+    </div>
+
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
@@ -64,6 +68,9 @@ export default {
   },
 
   methods: {
+    routerFn () {
+      this.$router.push(`/pages/counter/main`)
+    },
     httpFn () {
       this.$http.getTest({page: 2, pageSize: 15}).then(res => {
         wx.showToast({
