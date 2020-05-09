@@ -2,6 +2,7 @@
 基于 [mpvue](https://github.com/Meituan-Dianping/mpvue) [官方模版](https://github.com/mpvue/mpvue-quickstart)搭建的项目快速开发环境.
 
 ``` sh
+git clone --depth=1 https://github.com/wll8/mpvue-base && cd mpvue-base # 克隆并进入项目
 npm i && npm run dev # 安装依赖并启动项目
 # 然后使用微信开发者工具以本目录导入项目
 ```
