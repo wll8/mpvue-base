@@ -5,6 +5,10 @@
       less 样式
     </div>
 
+    <div class="demo">
+      <van-tag type="success">vant-weapp 标签组件</van-tag>
+    </div>
+
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />

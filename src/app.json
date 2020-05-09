@@ -4,6 +4,9 @@
     "pages/logs/main",
     "pages/counter/main"
   ],
+  "usingComponents": {
+    "van-tag": "/vant-weapp/dist/tag/index"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
