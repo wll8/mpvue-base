@@ -9,7 +9,7 @@ npm i && npm run dev # 安装依赖并启动项目
 ## 主要特性
 - [x] [eslint](https://eslint.org/demo)
 - [x] [standard](https://github.com/standard/standard) 编码风格
-- [ ] [husky](https://github.com/typicode/husky) 校验代码提交前的编码校验
+- [x] [husky](https://github.com/typicode/husky) 校验代码提交前的编码校验
 - [ ] [mpvue-entry](https://github.com/F-loat/mpvue-entry)，移除冗余的 main.js 文件
 - [ ] [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch)，支持使用类 vue-router 的 api
 - [ ] [vant-weapp](https://github.com/youzan/vant-weapp)，全局配置原生组件库
