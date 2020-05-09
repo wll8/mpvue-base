@@ -51,6 +51,17 @@ exports.cssLoaders = function (options) {
       })
     }
 
+    if (loader === `less`) {
+      loaders.push({
+        loader: 'sass-resources-loader',
+        options: {
+            resources: [
+                path.resolve(__dirname, '../src/public.less'),
+            ]
+        }
+      })
+    }
+
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {

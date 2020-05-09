@@ -79,6 +79,8 @@ export default {
 <style lang="less" scoped>
   .less {
     background-color: #ccc;
+    color: @mainColor;
+    .bg("80x10");
   }
 </style>
 

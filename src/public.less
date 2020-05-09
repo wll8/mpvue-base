@@ -1,0 +1,30 @@
+@baseImgUrl: "https://dummyimage.com/";
+@mainColor: #2B74F2;
+@bgGrey: #E0E0E0;
+@fontGrey: #8F8F8F;
+
+.bg(@url) { // 当 url 含 :// 时不拼接 baseUrl
+  // 小程序的 image 标签的 mode 属性可以实现类似功能
+  // https://developers.weixin.qq.com/miniprogram/dev/component/image.html
+  @isFull: boolean(replace(@url, ".*:\/\/.*", "") = "");
+  @urlEscape: escape(@url);
+  background-image: if(@isFull, url(@url), url("@{baseImgUrl}@{urlEscape}"));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link() {
+  color: @mainColor;
+}
+
+.disabled() {
+  background-color: @bgGrey;
+  color: @fontGrey;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+body {
+  font-family: "Source Han Sans CN", "PingFang-SC-Medium", "Microsoft YaHei";
+}
