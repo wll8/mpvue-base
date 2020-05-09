@@ -1,6 +1,10 @@
 <template>
   <div @click="clickHandle">
 
+    <div class="demo less">
+      less 样式
+    </div>
+
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
@@ -71,6 +75,12 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+  .less {
+    background-color: #ccc;
+  }
+</style>
 
 <style scoped>
 .userinfo {

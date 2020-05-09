@@ -14,7 +14,7 @@ npm i && npm run dev # 安装依赖并启动项目
 - [ ] [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch)，支持使用类 vue-router 的 api
 - [ ] [vant-weapp](https://github.com/youzan/vant-weapp)，全局配置原生组件库
 - [ ] [简化分包配置](https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages/basic.html)
-- [ ] [less](https://less.bootcss.com/) 预处理器
+- [x] [less](https://less.bootcss.com/) 预处理器
 - [ ] [sass-resources-loader](https://github.com/shakacode/sass-resources-loader) 配置全局 less 公用文件
 - [ ] [flyio](https://www.npmjs.com/package/flyio) 作为请求库, 并统一配置 api
 
